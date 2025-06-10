@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "DEMO-TEST",
-    "project_version":    "1",
+    "project_version":    "cfa033e-dirty",
     "project_path":       "C:/Users/ENG/Documents/demo/DEMO-TEST",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.3",
     "build_dir":          "C:/Users/ENG/Documents/demo/DEMO-TEST/build",
