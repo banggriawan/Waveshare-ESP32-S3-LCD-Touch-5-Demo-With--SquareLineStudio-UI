@@ -1,0 +1,11 @@
+dependencies:
+  idf: '>=4.1'
+description: This component is an example, to be used with the IDF component manager.
+issues: https://github.com/espressif/example_components/issues
+license: MIT
+repository: git://github.com/espressif/example_components.git
+repository_info:
+  commit_sha: 121f1c16ecbf502b8595c869cb3649a5b811b024
+  path: cmp
+url: https://github.com/espressif/example_components/tree/main/cmp
+version: 3.3.9~1

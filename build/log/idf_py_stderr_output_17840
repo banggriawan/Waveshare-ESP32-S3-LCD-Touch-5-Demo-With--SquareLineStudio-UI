@@ -1,0 +1,6 @@
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.3.3/tools/cmake/component.cmake:443 (message):
+  Called idf_component_register from a non-component directory.
+Call Stack (most recent call first):
+  ui/CMakeLists.txt:1 (idf_component_register)
+
+

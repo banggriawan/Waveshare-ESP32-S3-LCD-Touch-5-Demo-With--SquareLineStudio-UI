@@ -1,0 +1,39 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40048e22: uart_rx_readbuff in ROM
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- 0x40375c80: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0;33m--- 0x40375c80: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- Warning: Writing to serial is timing out. Please make sure that your application supports an interactive console and that you have picked the correct console for serial communication.[0m
+[0;33m--- 0x40375d46: panic_abort at C:/Espressif/frameworks/esp-idf-v5.3.3/components/esp_system/panic.c:463
+--- 0x4037c4fd: esp_system_abort at C:/Espressif/frameworks/esp-idf-v5.3.3/components/esp_system/port/esp_system_chip.c:87
+--- 0x40383495: __assert_func at C:/Espressif/frameworks/esp-idf-v5.3.3/components/newlib/assert.c:80
+--- 0x4200a355: display_init at C:/Users/ENG/Documents/demo/DEMO-TEST/main/lvgl_port.c:402 (discriminator 1)
+--- 0x4200a459: lvgl_port_init at C:/Users/ENG/Documents/demo/DEMO-TEST/main/lvgl_port.c:511
+--- 0x4200a24d: waveshare_esp32_s3_rgb_lcd_init at C:/Users/ENG/Documents/demo/DEMO-TEST/main/waveshare_rgb_lcd_port.c:177
+--- 0x42009f26: app_main at C:/Users/ENG/Documents/demo/DEMO-TEST/main/component_manager.c:14
+--- 0x4204ac33: main_task at C:/Espressif/frameworks/esp-idf-v5.3.3/components/freertos/app_startup.c:208
+--- 0x4037cfa5: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-v5.3.3/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375c80: esp_restart_noos at C:/Espressif/frameworks/esp-idf-v5.3.3/components/esp_system/port/soc/esp32s3/system_internal.c:158
+[0m
+[0m
+Traceback (most recent call last):
+  File "c:\Espressif\frameworks\esp-idf-v5.3.3\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

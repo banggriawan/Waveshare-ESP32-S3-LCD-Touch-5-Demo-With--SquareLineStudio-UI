@@ -1,0 +1,427 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Jun  5 2025 17:28:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot: efuse block revision: v1.3[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=12c9ch ( 76956) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00022cc4 vaddr=3fc95500 size=03120h ( 12576) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=00025dec vaddr=40374000 size=0a22ch ( 41516) load[0m
+[0;32mI (133) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4bab4h (309940) map[0m
+[0;32mI (188) esp_image: segment 4: paddr=0007badc vaddr=4037e22c size=07250h ( 29264) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (202) boot: Disabling RNG early entropy source...[0m
+[0;32mI (214) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (214) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (214) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (219) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (224) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (234) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (240) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (246) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (252) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (258) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (263) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (268) esp_psram: Speed: 40MHz[0m
+[0;32mI (272) cpu_start: Multicore app[0m
+[0;32mI (1006) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1015) cpu_start: Pro cpu start user code[0m
+[0;32mI (1015) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1016) app_init: Application information:[0m
+[0;32mI (1018) app_init: Project name:     DEMO-TEST[0m
+[0;32mI (1024) app_init: App version:      1[0m
+[0;32mI (1028) app_init: Compile time:     Jun  5 2025 17:24:09[0m
+[0;32mI (1034) app_init: ELF file SHA256:  422145315...[0m
+[0;32mI (1039) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (1045) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1050) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1055) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1060) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1067) heap_init: At 3FCA1478 len 00048298 (288 KiB): RAM[0m
+[0;32mI (1073) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1079) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1086) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1092) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1100) spi_flash: detected chip: gd[0m
+[0;32mI (1104) spi_flash: flash io: dio[0m
+[0;33mW (1108) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1119) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1126) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1133) main_task: Started on CPU0[0m
+[0;32mI (1143) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1143) main_task: Calling app_main()[0m
+Hello from example component!
+[0;32mI (1153) example: Install RGB LCD panel driver[0m
+[0;32mI (1223) example: Initialize RGB LCD panel[0m
+[0;32mI (1233) example: Initialize I2C bus[0m
+[0;32mI (1233) example: Initialize GPIO[0m
+[0;32mI (1233) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1243) example: Initialize Touch LCD[0m
+[0;32mI (1663) example: Initialize I2C panel IO[0m
+[0;32mI (1663) example: Initialize touch controller GT911[0m
+[0;32mI (1673) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1683) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1693) GT911: TouchPad_Config_Version:82[0m
+
+assert failed: display_init lvgl_port.c:402 (buf1)
+
+
+Backtrace: 0x40375d46:0x3fca4bd0 0x4037c4fd:0x3fca4bf0 0x40383495:0x3fca4c10 0x4200a2f5:0x3fca4d30 0x4200a3f9:0x3fca4d50 0x4200a1ed:0x3fca4d80 0x42009ec6:0x3fca4ea0 0x4204abd3:0x3fca4ec0 0x4037cfa5:0x3fca4ef0
+
+
+
+
+ELF file SHA256: 422145315
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jun  5 2025 17:28:08[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=12c9ch ( 76956) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00022cc4 vaddr=3fc95500 size=03120h ( 12576) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00025dec vaddr=40374000 size=0a22ch ( 41516) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4bab4h (309940) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=0007badc vaddr=4037e22c size=07250h ( 29264) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (213) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (214) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (218) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (224) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (234) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (240) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (246) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (251) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (257) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (262) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (267) esp_psram: Speed: 40MHz[0m
+[0;32mI (271) cpu_start: Multicore app[0m
+[0;32mI (1006) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1015) cpu_start: Pro cpu start user code[0m
+[0;32mI (1015) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1015) app_init: Application information:[0m
+[0;32mI (1018) app_init: Project name:     DEMO-TEST[0m
+[0;32mI (1023) app_init: App version:      1[0m
+[0;32mI (1027) app_init: Compile time:     Jun  5 2025 17:24:09[0m
+[0;32mI (1034) app_init: ELF file SHA256:  422145315...[0m
+[0;32mI (1039) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (1044) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1049) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1054) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1059) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1067) heap_init: At 3FCA1478 len 00048298 (288 KiB): RAM[0m
+[0;32mI (1073) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1079) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1085) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1092) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1100) spi_flash: detected chip: gd[0m
+[0;32mI (1103) spi_flash: flash io: dio[0m
+[0;33mW (1107) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1118) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1125) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1133) main_task: Started on CPU0[0m
+[0;32mI (1143) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1143) main_task: Calling app_main()[0m
+Hello from example component!
+[0;32mI (1153) example: Install RGB LCD panel driver[0m
+[0;32mI (1223) example: Initialize RGB LCD panel[0m
+[0;32mI (1233) example: Initialize I2C bus[0m
+[0;32mI (1233) example: Initialize GPIO[0m
+[0;32mI (1233) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1243) example: Initialize Touch LCD[0m
+[0;32mI (1663) example: Initialize I2C panel IO[0m
+[0;32mI (1663) example: Initialize touch controller GT911[0m
+[0;32mI (1673) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1683) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1693) GT911: TouchPad_Config_Version:82[0m
+
+assert failed: display_init lvgl_port.c:402 (buf1)
+
+
+Backtrace: 0x40375d46:0x3fca4bd0 0x4037c4fd:0x3fca4bf0 0x40383495:0x3fca4c10 0x4200a2f5:0x3fca4d30 0x4200a3f9:0x3fca4d50 0x4200a1ed:0x3fca4d80 0x42009ec6:0x3fca4ea0 0x4204abd3:0x3fca4ec0 0x4037cfa5:0x3fca4ef0
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jun  5 2025 17:28:08[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=12c9ch ( 76956) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00022cc4 vaddr=3fc95500 size=03120h ( 12576) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00025dec vaddr=40374000 size=0a22ch ( 41516) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4bab4h (309940) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=0007badc vaddr=4037e22c size=07250h ( 29264) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (213) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (214) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (219) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (224) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (234) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (240) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (246) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (251) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (257) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (263) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (267) esp_psram: Speed: 40MHz[0m
+[0;32mI (271) cpu_start: Multicore app[0m
+[0;32mI (1006) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1015) cpu_start: Pro cpu start user code[0m
+[0;32mI (1015) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1015) app_init: Application information:[0m
+[0;32mI (1018) app_init: Project name:     DEMO-TEST[0m
+[0;32mI (1023) app_init: App version:      1[0m
+[0;32mI (1028) app_init: Compile time:     Jun  5 2025 17:24:09[0m
+[0;32mI (1034) app_init: ELF file SHA256:  422145315...[0m
+[0;32mI (1039) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (1044) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1049) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1054) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1059) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1067) heap_init: At 3FCA1478 len 00048298 (288 KiB): RAM[0m
+[0;32mI (1073) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1079) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1085) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1092) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1100) spi_flash: detected chip: gd[0m
+[0;32mI (1103) spi_flash: flash io: dio[0m
+[0;33mW (1107) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1118) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1125) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1133) main_task: Started on CPU0[0m
+[0;32mI (1143) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1143) main_task: Calling app_main()[0m
+Hello from example component!
+[0;32mI (1153) example: Install RGB LCD panel driver[0m
+[0;32mI (1223) example: Initialize RGB LCD panel[0m
+[0;32mI (1233) example: Initialize I2C bus[0m
+[0;32mI (1233) example: Initialize GPIO[0m
+[0;32mI (1233) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1243) example: Initialize Touch LCD[0m
+[0;32mI (1663) example: Initialize I2C panel IO[0m
+[0;32mI (1663) example: Initialize touch controller GT911[0m
+[0;32mI (1673) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1683) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1693) GT911: TouchPad_Config_Version:82[0m
+
+assert failed: display_init lvgl_port.c:402 (buf1)
+
+
+Backtrace: 0x40375d46:0x3fca4bd0 0x4037c4fd:0x3fca4bf0 0x40383495:0x3fca4c10 0x4200a2f5:0x3fca4d30 0x4200a3f9:0x3fca4d50 0x4200a1ed:0x3fca4d80 0x42009ec6:0x3fca4ea0 0x4204abd3:0x3fca4ec0 0x4037cfa5:0x3fca4ef0
+
+
+
+
+ELF file SHA256: 422145315
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jun  5 2025 17:28:08[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=12c9ch ( 76956) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00022cc4 vaddr=3fc95500 size=03120h ( 12576) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00025dec vaddr=40374000 size=0a22ch ( 41516) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4bab4h (309940) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=0007badc vaddr=4037e22c size=07250h ( 29264) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (213) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (214) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (218) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (224) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (234) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (240) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (246) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (251) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (257) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (262) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (267) esp_psram: Speed: 40MHz[0m
+[0;32mI (271) cpu_start: Multicore app[0m
+[0;32mI (1006) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1015) cpu_start: Pro cpu start user code[0m
+[0;32mI (1015) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1015) app_init: Application information:[0m
+[0;32mI (1018) app_init: Project name:     DEMO-TEST[0m
+[0;32mI (1023) app_init: App version:      1[0m
+[0;32mI (1028) app_init: Compile time:     Jun  5 2025 17:24:09[0m
+[0;32mI (1034) app_init: ELF file SHA256:  422145315...[0m
+[0;32mI (1039) app_init: ESP-IDF:          v5.3.3-dirty[0m
+[0;32mI (1044) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1049) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1054) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1059) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1067) heap_init: At 3FCA1478 len 00048298 (288 KiB): RAM[0m
+[0;32mI (1073) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1079) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1085) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1092) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1100) spi_flash: detected chip: gd[0m
+[0;32mI (1103) spi_flash: flash io: dio[0m
+[0;33mW (1107) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1118) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1125) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1133) main_task: Started on CPU0[0m
+[0;32mI (1143) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1143) main_task: Calling app_main()[0m
+Hello from example component!
+[0;32mI (1153) example: Install RGB LCD panel driver[0m
+[0;32mI (1223) example: Initialize RGB LCD panel[0m
+[0;32mI (1233) example: Initialize I2C bus[0m
+[0;32mI (1233) example: Initialize GPIO[0m
+[0;32mI (1233) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1243) example: Initialize Touch LCD[0m
+[0;32mI (1663) example: Initialize I2C panel IO[0m
+[0;32mI (1663) example: Initialize touch controller GT911[0m
+[0;32mI (1673) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1683) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1693) GT911: TouchPad_Config_Version:82[0m
+
+assert failed: display_init lvgl_port.c:402 (buf1)
+
+
+Backtrace: 0x40375d46:0x3fca4bd0 0x4037c4fd:0x3fca4bf0 0x40383495:0x3fca4c10 0x4200a2f5:0x3fca4d30 0x4200a3f9:0x3fca4d50 0x4200a1ed:0x3fca4d80 0x42009ec6:0x3fca4ea0 0x4204abd3:0x3fca4ec0 0x4037cfa5:0x3fca4ef0
+
+
+
+
+ELF file SHA256: 422145315
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375c80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1870
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2ed8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Jun  5 2025 17:28:08[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=12c9ch ( 76956) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00022cc4 vaddr=3fc95500 size=03120h ( 12576) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=00025dec vaddr=40374000 size=0a22ch ( 41516) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=4bab4h (309940) map[0m
+[0;32mI (187) esp_image: segment 4: paddr=0007badc vaddr=4037e22c size=07250h ( 29264) load[0m
+[0;32mI (201) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (201) boot: Disabling RNG early entropy source...[0m
+[0;32mI (213) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (213) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (214) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (218) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (224) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (229) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (234) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (240) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (246) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (251) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (257) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (262) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (267) esp_psram: Speed: 40MHz[0m
+[0;32mI (271) cpu_start: Multicore app[0m

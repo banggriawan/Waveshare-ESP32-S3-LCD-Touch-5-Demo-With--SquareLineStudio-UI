@@ -1,0 +1,19 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "c:\\Espressif\\frameworks\\esp-idf-v5.3.3",
+  "idf.pythonInstallPath": "c:\\Espressif\\tools\\tools\\idf-python\\3.11.2\\python.exe",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.portWin": "COM3",
+  "idf.toolsPathWin": "c:\\Espressif\\tools",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "files.associations": {
+    "waveshare_rgb_lcd_port.h": "c",
+    "lv_demos.h": "c",
+    "lvgl.h": "c",
+    "ui_helpers.h": "c"
+  }
+}

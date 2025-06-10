@@ -1,0 +1,62 @@
+[1/1400] Generating project_elf_src_esp32s3.c
+[2/1400] Generating C:/Users/ENG/Documents/demo/DEMO-TEST/build/esp-idf/esp_system/ld/sections.ld.in linker script...
+[3/1400] Generating C:/Users/ENG/Documents/demo/DEMO-TEST/build/esp-idf/esp_system/ld/memory.ld linker script...
+[4/1400] Building C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/esp_psram.c.obj
+[5/1400] Building C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/mmu_psram_flash.c.obj
+[6/1400] Building C object ui/CMakeFiles/ui.dir/components/ui_comp_hook.c.obj
+[7/1400] Building C object esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/esp32s3/esp_psram_impl_octal.c.obj
+[8/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj
+[9/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.obj
+[10/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.obj
+[11/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.obj
+[12/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.obj
+[13/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj
+[14/1400] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj
+[15/1400] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[16/1400] Building C object ui/CMakeFiles/ui.dir/screens/ui_Screen1.c.obj
+FAILED: ui/CMakeFiles/ui.dir/screens/ui_Screen1.c.obj 
+ccache C:\Espressif\tools\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -MD -MT ui/CMakeFiles/ui.dir/screens/ui_Screen1.c.obj -MF ui\CMakeFiles\ui.dir\screens\ui_Screen1.c.obj.d -o ui/CMakeFiles/ui.dir/screens/ui_Screen1.c.obj -c C:/Users/ENG/Documents/demo/DEMO-TEST/ui/screens/ui_Screen1.c
+In file included from C:/Users/ENG/Documents/demo/DEMO-TEST/ui/screens/ui_Screen1.c:6:
+C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui.h:13:10: fatal error: lvgl.h: No such file or directory
+   13 | #include "lvgl.h"
+      |          ^~~~~~~~
+compilation terminated.
+[17/1400] Building C object ui/CMakeFiles/ui.dir/ui_helpers.c.obj
+FAILED: ui/CMakeFiles/ui.dir/ui_helpers.c.obj 
+ccache C:\Espressif\tools\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -MD -MT ui/CMakeFiles/ui.dir/ui_helpers.c.obj -MF ui\CMakeFiles\ui.dir\ui_helpers.c.obj.d -o ui/CMakeFiles/ui.dir/ui_helpers.c.obj -c C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui_helpers.c
+In file included from C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui_helpers.h:13,
+                 from C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui_helpers.c:6:
+C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui.h:13:10: fatal error: lvgl.h: No such file or directory
+   13 | #include "lvgl.h"
+      |          ^~~~~~~~
+compilation terminated.
+[18/1400] Building C object ui/CMakeFiles/ui.dir/ui.c.obj
+FAILED: ui/CMakeFiles/ui.dir/ui.c.obj 
+ccache C:\Espressif\tools\tools\xtensa-esp-elf\esp-13.2.0_20240530\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe   -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -MD -MT ui/CMakeFiles/ui.dir/ui.c.obj -MF ui\CMakeFiles\ui.dir\ui.c.obj.d -o ui/CMakeFiles/ui.dir/ui.c.obj -c C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui.c
+In file included from C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui.c:6:
+C:/Users/ENG/Documents/demo/DEMO-TEST/ui/ui.h:13:10: fatal error: lvgl.h: No such file or directory
+   13 | #include "lvgl.h"
+      |          ^~~~~~~~
+compilation terminated.
+[19/1400] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.obj
+[20/1400] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.obj
+[21/1400] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.obj
+[22/1400] Building C object esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj
+[23/1400] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport.c.obj
+[24/1400] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ssl.c.obj
+[25/1400] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.obj
+[26/1400] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_socks_proxy.c.obj
+[27/1400] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_internal.c.obj
+[28/1400] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ws.c.obj
+[29/1400] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+[30/1400] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj
+[31/1400] Linking C static library esp-idf\esp_psram\libesp_psram.a
+ninja: build stopped: subcommand failed.
